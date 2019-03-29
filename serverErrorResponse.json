@@ -1,0 +1,7 @@
+{
+  "timestamp": "2019-03-27T17:23:10.668+0000",
+  "status": 500,
+  "error": "Internal Server Error",
+  "message": "invalid hexadecimal representation of an ObjectId: [123]",
+  "path": "/projects/groups/123/"
+}

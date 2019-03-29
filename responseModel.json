@@ -1,0 +1,8 @@
+{
+  "status": "OK",
+  "statusCode": 200,
+  "message": "Success",
+  "data": [
+    "{ \"_id\" : { \"$oid\" : \"5c9b5e0d6fcf6d278467d432\" }, \"name\" : \"flowtest\", \"project\" : { \"$oid\" : \"5c9b466d0206327f83b6f4ba\" }, \"_class\" : \"com.webcomponents.react.models.Flow\", \"projectDetails\" : { \"_id\" : { \"$oid\" : \"5c9b466d0206327f83b6f4ba\" }, \"name\" : \"SomeTestName\", \"_class\" : \"com.webcomponents.react.models.Project\" } }"
+  ]
+}

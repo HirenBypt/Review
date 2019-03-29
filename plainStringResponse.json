@@ -1,0 +1,27 @@
+[
+  {
+    "_id": {
+      "$oid": "5c9b466d0206327f83b6f4ba"
+    },
+    "name": "SomeTestName",
+    "children": [
+      {
+        "children": []
+      },
+      {
+        "name": "Flows",
+        "_id": {
+          "$oid": "123456789"
+        },
+        "children": []
+      },
+      {
+        "name": "script",
+        "id": {
+          "$oid": "123456780"
+        },
+        "children": []
+      }
+    ]
+  }
+]
