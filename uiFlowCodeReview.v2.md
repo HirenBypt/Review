@@ -92,4 +92,5 @@ But it superfluous. When we get ArrayList from model, we get link to this list a
 
 1. Endpoints still make confused about data model's relations. 
 
- 
+1. Many code duplicates in controllers
+
