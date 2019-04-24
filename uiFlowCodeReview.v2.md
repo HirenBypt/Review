@@ -67,40 +67,40 @@ specified how add this dependency to development use only.
 1. Developers add dependency for Swagger (API description), but there is no information in readme how to use it. Swagger need to 
 easy communication between BE and FE developers to specify API.
 
-*Yes I will add that in readme.
+*Yes I will add that in readme.*
 
 1. (Minor) Add empty lines in `pom.xml` between sections for better readability and add comments for dependencies what for this dependency is.
 
-*ok
+*ok*
 
 1. File `ATPMTConstants.java` contains constant `BASE_PATH` which equals to `"img/web_elements"`. 
 I think it's better to name it like `IMAGE_BASE_PATH`. 
 P.S. There is a little life hack for classes with constants, not to write `final puvblic static` You can rewrite that as interface, where 
 all fields by default public, static and final. 
 
-*ok
+*ok*
 
 1. File `ElementType.java` contains name `FLOWGROUP`, by conversation when name uses UPPER_CASE, then use underscore to separate words.
 
-*ok
+*ok*
 
 1. I think file `EnvironmentConstants` can be deprecated and deleted. 
 
-*
+
 
 1. File `Error.java` can be more shorter with Lombok: `@AllArgsConstructor(access = AccessLevel.PRIVATE)` to generate private constructor, `@Getter` - for getters. 
 
-*yeah. ok.
+*yeah. ok.*
 
 1. Params in controllers often written in one line, so it makes controller readability worse. 
 
-*will format that
+*will format that*
 
 1. In many places used approach to make relations between two entities (for example Project and Group). We want to 
 make relation between Group and Project. We send to BE Group and ProjectId. BE creates ingot Project with only Id and 
 relates it to group. But there is no check is project with such Id exists in DB.
 
-*BE does not create project transitionally but just mapping it. And practically if the projectId won't have in DB, FE won't have even.
+*BE does not create project transitionally but just mapping it. And practically if the projectId won't have in DB, FE won't have even.*
 
 1. Mess with Models and DTO. Main use of DTO, when we have information from different sources and we concatenate is together. 
 For example if need `Component` with `Project` information then there we use DTO, where we specify required fields from 
@@ -120,17 +120,17 @@ But it superfluous. When we get ArrayList from model, we get link to this list a
 
 1. Many `Repository` uses `public` word, but all interfaces methods are public by default. 
 
-*yes. will remove that.
+*yes. will remove that.*
 
 1. There are custom repositories, but they are unused, so we can delete them.
 
-*can you let us know the respository names?
+*can you let us know the respository names?*
 
 1. Endpoints still make confused about data model's relations. 
 
-*can you let us know the places with suggested endpoint url?
+*can you let us know the places with suggested endpoint url?*
 
 1. Many code duplicates in controllers
 
-*can you let us know the places?
+*can you let us know the places?*
 
